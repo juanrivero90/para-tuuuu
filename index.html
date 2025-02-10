@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <audio id="background-music" src="./noseee.mp3" loop autoplay muted></audio>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('background-music');
+    
+            
+            document.addEventListener('click', () => {
+                if (audio.muted) {
+                    audio.muted = false;
+                    audio.play().catch(err => console.error("Error al reproducir el audio:", err));
+                }
+            }, { once: true }); 
+        });
+    </script>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>para AZUUUUUUUUUUL💖</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>PARA AZUL 💕</strong>
+                        <p>
+                            Hoy es un dia hermoso es el dia del amor y amistad 
+                            y las palabras se quedan cortas para demostrar 
+                            lo mucho que te quiero. Eres alguien que quiero 
+            para toda mi vida, y queria pedirte si ¿quieres ser mi SAN VALENTTIN💖?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+
+
+</body>
+</html>
